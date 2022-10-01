@@ -14,6 +14,9 @@
     --violeta: #76448A;
     --granate: #922B21;
     --rojo: #B03A2E;
+    --ojo: #ff904f;
+    --fondoOscuro: #281507;
+    --fondoOscuro2: #120701;
 }
 
 html{
@@ -34,22 +37,24 @@ html{
 }
 
 .colorAcordeon{
-    background-color: var(--oscuro)!important;
-    color: var(--granate)!important;
+    background-color: var(--fondoOscuro2)!important;
+    color: var(--ojo)!important;
 }
 
 .colorAcordeonIn{
-    background-color: var(--blanco)!important;
-    color: var(--granate)!important;
+    /* background-color: var(--blanco)!important; */
+    color: var(--ojo)!important;
+    background-image: linear-gradient(to top, var(--granate) 0%, var(--oscuro) 100%);
 }
 
 body{
     font-family: 'Gloria Hallelujah', cursive, sans-serif;
-    background-image: linear-gradient(to top, var(--violeta) 0%, var(--granate) 100%);
+    background-image: linear-gradient(to top, var(--granate) 0%, var(--oscuro) 100%);
 }
 
 h1{
     text-align: center;
+    color: var(--ojo);
 }
 
 .botones{
@@ -75,8 +80,8 @@ button{
     margin-top: 10px;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to top, var(--oscuroFooterPP) 0%, var(--violeta) 100%);
-    color: var(--granate);
+    background-image: linear-gradient(to top, var(--fondoOscuro2) 0%, var(--gris) 100%);
+    color: var(--oscuroFooterPP);
     border-radius: 100px;
 }
 
@@ -91,7 +96,7 @@ button{
 .descripcion, span{
     text-align: center!important;
     font-size: 18px;
-    color: var(--granate);
+    color: var(--blanco);
 }
 
 .cuadro{
@@ -99,6 +104,7 @@ button{
     border-color: var(--oscuroFooter);
     padding: 10px;
     border-radius: 10px;
+    background-image: linear-gradient(to top, var(--fondoOscuro2) 0%, var(--gris) 100%);
 }
 
 .mt{
